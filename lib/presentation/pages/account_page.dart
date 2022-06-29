@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:liberapp/presentation/pages/cart_page.dart';
 import 'package:liberapp/services/auth_service.dart';
 import 'package:provider/provider.dart';
 
@@ -11,6 +12,7 @@ class AccountPage extends StatefulWidget {
 }
 
 class _AccountPageState extends State<AccountPage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +30,7 @@ class _AccountPageState extends State<AccountPage> {
             style: OutlinedButton.styleFrom(
               primary: Colors.red,
             ),
-            child: Row(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const <Widget>[
                 Icon(Icons.logout),

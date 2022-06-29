@@ -70,7 +70,7 @@ class BookRepository{
     ),
   ];
 
-  static List<Book> bookListFilter(String type, String? subject){
+  List<Book> bookListFilter(String type, String? subject){
     List<Book> result = []; 
     if(type == 'random'){
       result = list;
@@ -81,15 +81,15 @@ class BookRepository{
         if(book.category == subject){
           result.add(book);
         }
-        return result;
       }
+      return result;
     }else if(type == 'search'){
       for(var book in list){
         if(book.title.toLowerCase().contains(subject!.toLowerCase())){
           result.add(book);
         }
-        return result;
       }
+      return result;
     }
     result.add(list[0]);
     return result;

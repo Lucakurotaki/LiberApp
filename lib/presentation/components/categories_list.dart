@@ -29,7 +29,7 @@ class CategoriesList extends StatelessWidget {
           ),
           Category(
             iconChar: 'HQ',
-            iconCaption: 'HQs',
+            iconCaption: 'HQ',
           ),
           Category(
             iconChar: 'A',

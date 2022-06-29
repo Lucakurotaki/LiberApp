@@ -6,7 +6,6 @@ Widget carouselGallery = SizedBox(
   child: CarouselSlider(
     options: CarouselOptions(height: 200.0, autoPlay: true),
     items: [
-      'image/c01.svg',
       'image/c02.jpg',
       'image/c03.png'
     ].map((i) {
